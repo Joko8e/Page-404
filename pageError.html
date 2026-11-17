@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pageError.css">
-    <title>Page 404</title>
+    <title>Page not found · GitHub</title>
 </head>
 <body>
-    <div>
-        <img src="/Exo/desert.svg" alt="background desert">
-        <img src="/Exo/labubu-anakin.svg" alt="labubu anakin">
+
+    <!-- Partie supérieure : Illustration complète -->
+    <div class="banner">
+        <img src="desert.svg" alt="desert" class="banner-desert">
+        <img src="jedi.svg" alt="jedi" class="error-image">
     </div>
-    <div>
+
+    <!-- Partie inférieure : Recherche et Liens -->
+    <div class="search-section">
         <h3>Find code, projects, and people on GitHub:</h3>
-        <form action="" method="get">
-            <input type="text">
+        
+        <form action="https://github.com/search" method="get" class="search-form">
+            <input type="text" name="q" aria-label="Search GitHub">
             <button type="submit">Search</button>
         </form>
-        <div>
-            <a href="#">Contact support</a>
-            <a href="#">Github Status</a>
+
+        <div class="footer-links">
+            <a href="#">Contact Support</a>
+            <span>—</span>
+            <a href="#">GitHub Status</a>
+            <span>—</span>
             <a href="#">@githubstatus</a>
         </div>
-        <a href="">
-            <img src="#" alt="GitHub logo">
+
+        <a href="https://github.com" class="github-logo" aria-label="Homepage">
+            <img src="gitHubLogo.png" alt="GitHub Logo">
         </a>
     </div>
-    
+
 </body>
 </html>
